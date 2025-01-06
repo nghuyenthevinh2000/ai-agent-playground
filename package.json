@@ -1,0 +1,25 @@
+{
+    "type": "module",
+    "dependencies": {
+        "@langchain/anthropic": "^0.3.11",
+        "@langchain/community": "^0.3.22",
+        "@langchain/core": "^0.3.27",
+        "@langchain/openai": "^0.3.16",
+        "@langchain/textsplitters": "^0.1.0",
+        "dotenv": "^16.4.7",
+        "langchain": "^0.3.9",
+        "pdf-parse": "^1.1.1",
+        "zod": "^3.24.1"
+    },
+    "scripts": {
+        "test:llm": "node --loader ts-node/esm langchain/llm_test.ts",
+        "test:data_crud": "node --loader ts-node/esm langchain/data_vector_crud_test.ts",
+        "test:classification": "node --loader ts-node/esm langchain/classification_test.ts",
+        "test:extraction": "node --loader ts-node/esm langchain/extraction_chain_test.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.5",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.2"
+    }
+}
